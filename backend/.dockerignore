@@ -1,1 +1,10 @@
 node_modules
+.env
+
+# Ignore Docker-related files
+Dockerfile*
+docker-compose*
+
+# Ignore Git & IDE files
+.gitignore
+.vscode
