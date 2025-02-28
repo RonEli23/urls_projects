@@ -6,4 +6,9 @@ import { handleUrls } from '../controllers/url.controller.js';
 
 router.post('/',checkCache,handleUrls);
 
+router.get('/', (req, res) => {
+    res.send('<h1>Welcome to My Express Server on AWS App Runner 🚀</h1>');
+});
+
+
 export default router;

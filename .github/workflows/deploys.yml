@@ -33,4 +33,4 @@ jobs:
 
     - name: Deploy to AWS App Runner (example step)
       run: |
-        aws apprunner start-deployment --service-name express-web-server --image ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.eu-north-1.amazonaws.com/url-project/express-web-server:latest
+        aws apprunner start-deployment --service-name my-first-aws-web-app --image ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.eu-north-1.amazonaws.com/url-project/express-web-server:latest
