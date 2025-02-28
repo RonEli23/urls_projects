@@ -9,6 +9,7 @@ on:
       - main  # Trigger the workflow on pull requests targeting main branch
 
 jobs:
+  
   build:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
 
