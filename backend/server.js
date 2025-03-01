@@ -31,6 +31,9 @@ app.use(limiter);
 // routes
 app.use('/fetch-metadata', urlRouter); 
 
+app.get('/', (req, res) => {
+    res.send('<h1>Welcome to My Express Server on AWS App Runner 🚀</h1>');
+});
 
 app.all('*', (req, res) => {
     res.status(404).json({ error: 'Not Found' });
