@@ -44,7 +44,8 @@ jobs:
 
     - name: Update AWS App Runner Service
       run: |
-          aws apprunner update-service --service-arn arn:aws:apprunner:eu-central-1:${{ secrets.AWS_ACCOUNT_ID }}:service/my-first-aws-web-app/4b27cca6af95492f908f450937776760 \
-              --source-configuration "{\"ImageRepository\": {\"ImageIdentifier\": \"${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.eu-central-1.amazonaws.com/url-project/express-web-server:latest\", \"ImageRepositoryType\": \"ECR\"}}"
+            aws apprunner update-service --region eu-central-1 \
+                --service-arn arn:aws:apprunner:eu-central-1:${{ secrets.AWS_ACCOUNT_ID }}:service/my-first-aws-web-app/4b27cca6af95492f908f450937776760 \
+                --source-configuration "{\"ImageRepository\": {\"ImageIdentifier\": \"${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.eu-central-1.amazonaws.com/url-project/express-web-server:latest\", \"ImageRepositoryType\": \"ECR\"}}"
       
       
