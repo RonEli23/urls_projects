@@ -32,12 +32,10 @@ app.use(limiter);
 app.use('/fetch-metadata', urlRouter); 
 
 app.get('/', (req, res) => {
+    console.log("GET / route hit");
     res.send('<h1>Welcome to My Express Server on AWS App Runner 🚀</h1>');
 });
 
-app.all('*', (req, res) => {
-    res.status(404).json({ error: 'Not Found' });
-});
 
 app.use(errorHandler); //!!!check 
 
@@ -47,6 +45,10 @@ const connection = async () => {
         app.listen(PORT, () => console.log(`Listen on port ${PORT}`));
 }
 connection().catch(err => console.log(err.message));
+
+app.all('*', (req, res) => {
+    res.status(404).json({ error: 'Not Found' });
+});
 
 // Export the app object
 export default app;
