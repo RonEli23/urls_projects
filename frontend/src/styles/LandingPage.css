@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Heading */
+  h1 {
+    color: #ff9800;
+    margin-bottom: 20px;
+  }
+  
+  /* Form */
+  .url-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #ff9800;
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+  }
+  
+  .submit-btn {
+    padding: 12px;
+    background-color: #ff9800;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ffb74d;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #ff5252;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Slider Container */
+  .slider-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+  }
+  
+  /* Slide */
+  .slide {
+    padding: 15px;
+  }
+  
+  .slide h3 {
+    color: #ff9800;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .preview-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
