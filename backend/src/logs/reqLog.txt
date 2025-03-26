@@ -78,3 +78,5 @@
 20250321	15:01:49	e5ce2541-4a85-44c8-ad1a-a8f91ffbcc74	POST	http://localhost:3000	/fetch-metadata
 20250321	15:03:10	3956e630-a728-49a3-8766-577c45f81915	OPTIONS	http://localhost:3000	/fetch-metadata
 20250321	15:03:10	409493d2-a209-43a6-bcf4-b0c28fd6af6a	POST	http://localhost:3000	/fetch-metadata
+20250326	19:50:16	3c8508fb-e645-4250-bafb-89147f491d0a	OPTIONS	http://localhost:3000	/fetch-metadata
+20250326	19:50:16	2e9b5e3c-8198-4e1f-8d96-0d3d6d15bd3a	POST	http://localhost:3000	/fetch-metadata
